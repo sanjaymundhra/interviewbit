@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+ A = [ -7, -13 ];
+B = [ 1, -5 ];
+	n = A.length;
+	    if(n<2) alert(0); //return 0
+	    count = 0;max = 0;
+	    for(i=0;i<n-1;i++){
+	        a = A[i]-A[i+1];
+	        b = B[i]-B[i+1];
+	        if( a<0){
+	            a = Math.abs(a);
+	        }
+	        if( b<0){
+	            b = Math.abs(b);
+	        }
+	        if(a>b){
+	            max = a;
+	        }
+	        else{
+	             max = b;
+	        }
+	        count = count + max;
+	    }
+	    alert(count) ; //return count
+</script>
+</body>
+</html>
