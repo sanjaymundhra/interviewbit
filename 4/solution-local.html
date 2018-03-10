@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+	 A ="8 5 4 3 2 9 7 1 0 5 3";
+
+	 A = A.split(" ");
+	 A 	= [6,17,15,13];
+	 A.sort(function(a,b){ return a-b});
+        n=A.length;
+        if(n%2==1)n=n-1;
+        temp=0;
+        for(i=0;i<n;i+=2){
+            temp=A[i+1];
+            A[i+1]=A[i];
+            A[i]=temp;
+        }
+	 document.write(A);
+	</script>
+</body>
+</html>
