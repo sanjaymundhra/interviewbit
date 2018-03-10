@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		A = [1, 2, 7, 0, 9, 3, 6, 0, 6 ];
+		A = [-9 ,-1, 3 ,4 ,5 ,5, 7 ,8 ];
+		A= [ 6, 7, 5 ];
+		n=A.length-1;
+        A.sort();p=0;
+		for(i=0;i<n;i++){
+		    if(A[i]<A[i+1])	{
+		        p=n-i;
+		        if(A[i]==p) 
+			        alert("1") ;
+		    }			
+		}
+		if (A[n]==0) alert("1") ;
+		alert("-1") ;
+	</script>
+</body>
+</html>
